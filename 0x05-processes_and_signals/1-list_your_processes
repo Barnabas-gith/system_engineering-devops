@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# A Bash script that lists all currently running processes including those without a TTY,
+# in a user-oriented format, showing the process hierarchy.
+ps axjf
