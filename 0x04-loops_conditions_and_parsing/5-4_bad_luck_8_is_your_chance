@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Display messages for each loop iteration with special messages for 4th and 8th
+count=1
+while [ $count -le 10 ]; do
+  if [ $count -eq 4 ]; then
+    echo bad luck
+  elif [ $count -eq 8 ]; then
+    echo good luck
+  else
+    echo Best School
+  fi
+  ((count++))
+done
