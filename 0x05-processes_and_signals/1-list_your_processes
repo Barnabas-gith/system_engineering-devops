@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# A Bash script that lists all running processes including those without a TTY,
-# showing process hierarchy with a specific header format.
-ps -e -o user,start,time,cmd --forest | sed '1s/START/STARTED/; 1s/CMD/COMMAND/' 
