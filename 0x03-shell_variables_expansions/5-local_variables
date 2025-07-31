@@ -1,9 +1,2 @@
 #!/bin/bash
-
-# Print shell functions
-echo "### Shell Functions ###"
-declare -f
-
-# Print local and environment variables
-echo "### Variables (Local and Environment) ###"
-( set -o posix; set )
+echo "$PATH" | tr ':' '\n' | wc -l
