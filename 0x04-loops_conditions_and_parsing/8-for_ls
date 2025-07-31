@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# List current directory files, showing only the part after the first dash
+for file in *; do
+  # Check if it's a file and contains a dash
+  if [[ -f "$file" && "$file" == *-* ]]; then
+    echo "${file#*-}"
+  elif [[ -f "$file" && "$file" != *-* ]]; then
+    # If no dash, print the whole filename
+    echo "$file"
+  fi
+done
