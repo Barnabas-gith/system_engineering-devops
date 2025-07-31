@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# A Bash script that lists all currently running processes including those without a TTY,
-# in a user-oriented format, showing the process hierarchy.
-ps axjf
+# A Bash script that lists all running processes including those without a TTY
+# in a user-oriented format and shows process hierarchy.
+ps -eo user,pid,pcpu,pmem,vsz,rss,tty,stat,start,time,cmd --forest
