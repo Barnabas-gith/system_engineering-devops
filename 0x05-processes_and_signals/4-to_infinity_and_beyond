@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# A Bash script that continuously displays "To infinity and beyond" every 2 seconds
+while true; do
+  echo "To infinity and beyond"
+  sleep 2
+done
